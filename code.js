@@ -8,7 +8,17 @@ function sayHello(input) {
         return "Hello, World!";
     } else if( typeof input == 'boolean'){
         return "Hello, World!";
-    } else if( typeof input !== 'string'){
+    }
+    else if( typeof input == 'number'){
+        return "Hello, number";
+    }
+    else if( input == null){
+        return "Hello, null";
+    }
+    else if( input == ''){
+        return "Hello, blank";
+    }
+    else if( typeof input !== 'string'){
         return "Hello, unknown";
     }
     else {
@@ -16,3 +26,9 @@ function sayHello(input) {
     }
 }
 
+function isFive(input){
+    if (input ===5){
+        return true;
+    }
+    return false;
+}

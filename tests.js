@@ -42,7 +42,15 @@ describe('sayHello',function() {
 
 });
 
-
-
-
+describe('isFive', function() {
+    it('should be a defined function', function() {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return a boolean with any input', function() {
+        expect(typeof isFive()).toBe('boolean');
+    });
+    it('should return a boolean true with input 5', function() {
+        expect(isFive(5)).toBe(true);
+    });
+});
 
