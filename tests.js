@@ -13,3 +13,13 @@ describe('helloWorld', function() {
       expect(helloWorld()).not.toBe(undefined);
     });
 });
+//plus one
+describe('plusOne', function() {
+    it('it should be a defined function', function() {
+        expect(typeof plusOne).toBe('function');
+    })
+});
+
+
+
+
