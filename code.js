@@ -32,3 +32,11 @@ function isFive(input){
     }
     return false;
 }
+
+function isEven(input){
+    if(!isNaN(parseFloat(input))){
+        return input%2 === 0;
+    }
+    return false;
+}
+
