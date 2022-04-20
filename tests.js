@@ -123,3 +123,39 @@ describe('isVowel', function(){
     });
 })
 
+describe('add', function(){
+    it('should be a defined as a function', function(){
+        expect(typeof add).toBe('function');
+    });
+    it('should return a number', function(){
+        expect(typeof add()).toBe('number');
+    });
+    // add(2, 3) returns 5
+    it('should be 5 with input 2,3', function() {
+        expect(add(2,3)).toBe(5);
+    });
+    // add(-3, -9) returns -12
+    it('should be -12 with input -3,-9', function() {
+        expect(add(-3,-9)).toBe(-12);
+    });
+    // add("5", 6) returns 11
+    it('should be 11 with input "5", 6', function() {
+        expect(add("5",6)).toBe(11);
+    });
+    // add("-4", "10") returns 6
+    it('should be 6 with input "-4", 10', function() {
+        expect(add("-4",'10')).toBe(6);
+    });
+    // add("banana", "split") returns NaN
+    it('should be NaN with input "banana", split', function() {
+        expect(add("banana",'split')).toBeNaN();
+    });
+    // add(2, "apples") returns NaN
+    it('should be NaN with input 2, apples', function() {
+        expect(add(2,'apples')).toBeNaN();
+    });
+    // add() returns NaN
+    it('should be NaN with no input', function() {
+        expect(add()).toBeNaN();
+    });
+});

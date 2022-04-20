@@ -51,3 +51,13 @@ function isVowel(input){
     }
 
 }
+
+function add(x,y){
+    if( (isNaN(parseFloat(x)) || isNaN(parseFloat(y) ) ) )
+    {
+        return NaN;
+    } else {
+        return parseFloat(x)+parseFloat(y);
+    }
+
+}
