@@ -40,3 +40,14 @@ function isEven(input){
     return false;
 }
 
+function isVowel(input){
+    let vowels = 'aeiou';
+    if(input == '' || input == undefined){
+        return false;
+    }else if(vowels.includes(input)){
+        return true;
+    } else{
+        return false;
+    }
+
+}
